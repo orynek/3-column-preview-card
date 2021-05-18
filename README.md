@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/orynek/3-column-preview-card)
+- Live Site URL: [Add live site URL here](https://3-column-card-challenge.netlify.app)
 
 ## My process
 
@@ -53,7 +53,7 @@ Although I can uccessfuly implement Flexbox I realized it would be wise to refre
 
 ### Useful resources
 
-Youtube tutorials seeing in the past.
+YouTube tutorials seen in the past.
 
 ## Author
 
