@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light-gray: hsl(0, 0%, 95%);
+  --clr-paragr: hsla(0, 0%, 100%, 0.75);
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-vdark-cyan: hsl(179, 100%, 13%);
+  --font-size: 15px;
+}
+
+body {
+  min-height: 500px;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-light-gray);
+}
+
+.container {
+  max-width: 920px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.car {
+  height: 40px;
+  width: 64px;
+  margin-bottom: 7px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.sedans {
+  background-color: var(--clr-bright-orange);
+  a {
+    color: var(--clr-bright-orange);
+  }
+}
+
+.suvs {
+  background-color: var(--clr-dark-cyan);
+  a {
+    color: var(--clr-dark-cyan);
+  }
+}
+
+.luxury {
+  background-color: var(--clr-vdark-cyan);
+  a {
+    color: var(--clr-vdark-cyan);
+  }
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--clr-light-gray);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--clr-paragr);
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  line-height: 2;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  align-self: center;
+}
+
+.btn {
+  min-height: 45px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: var(--clr-light-gray);
+  display: flex;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--clr-light-gray);
+    & a {
+      color: var(--clr-light-gray);
+    }
+  }
+}
+
+.attribution {
+  margin: 10px auto;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.7em;
+  color: var(--clr-vdark-cyan);
+  a {
+    color: var(--clr-dark-cyan);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    display: block;
+    margin: 20px 20px 0px;
+    height: auto;
+  }
+
+  .attribution {
+      margin: 5px auto;
+  }
+}
